@@ -1,0 +1,15 @@
+[
+    {"pk":1, 
+"model": "products.product",
+"fields": {
+    "sku": "",
+    "name": "",
+    "description": "",
+    "price": ,
+    "category": ,
+    "rating": ,
+    "image_url": "",
+    "image": "",
+    }
+}
+]
