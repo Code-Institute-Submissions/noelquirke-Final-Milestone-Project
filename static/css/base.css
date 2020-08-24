@@ -21,6 +21,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    text-shadow: 2px 2px 5px white;
 }
 
 .main-logo-link {
