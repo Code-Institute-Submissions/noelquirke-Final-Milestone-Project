@@ -39,12 +39,11 @@
                 Dental
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="dental-link">
-                <a href="" class="dropdown-item">Examination & X-rays</a>
-                <a href="" class="dropdown-item">Dental Hygiene</a>
-                <a href="" class="dropdown-item">Crowns/Bridges</a>
-                <a href="" class="dropdown-item">Restorations</a>
-                <a href="" class="dropdown-item">Orthodontics</a>
-                <a href="" class="dropdown-item">All Dental Treatments</a>
+                <a href="{% url 'products' %}?category=examination_xrays" class="dropdown-item">Examination & X-rays</a>
+                <a href="{% url 'products' %}?category=dental_hygiene" class="dropdown-item">Dental Hygiene</a>
+                <a href="{% url 'products' %}?category=crowns_bridges" class="dropdown-item">Crowns/Bridges</a>
+                <a href="{% url 'products' %}?category=restorations" class="dropdown-item">Restorations</a>
+                <a href="{% url 'products' %}?category=examination_xrays,dental_hygiene,crowns_bridges,restorations" class="dropdown-item">All Dental Treatments</a>
             </div>
         </li>
 
@@ -53,9 +52,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
