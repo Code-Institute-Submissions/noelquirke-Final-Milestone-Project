@@ -7,7 +7,7 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="non_surgical-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Non-Surgical Cosmetic
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="non-surgical-cosmetic-link">
@@ -23,7 +23,7 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="dental-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dental
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="dental-link">
@@ -34,5 +34,19 @@
                 <a href="{% url 'products' %}?category=examination_xrays,dental_hygiene,crowns_bridges,restorations" class="dropdown-item">All Dental Treatments</a>
             </div>
         </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="online_store-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Online Store
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="dental-link">
+                <a href="{% url 'products' %}?category=" class="dropdown-item">Anti-Aging</a>
+                <a href="{% url 'products' %}?category=" class="dropdown-item">Cleanser</a>
+                <a href="{% url 'products' %}?category=" class="dropdown-item">Moisturiser</a>
+                <a href="{% url 'products' %}?category=" class="dropdown-item">Skin Supplements</a>
+                <a href="{% url 'products' %}?category=" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+
     </ul>
 </div>
