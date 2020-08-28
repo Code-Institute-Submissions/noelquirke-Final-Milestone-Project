@@ -40,53 +40,52 @@ If I had more time for development I would have included a booking date and time
 <h2>Technologies Used</h2>
 
 <h3>Languages</h3>
-Python
-Using Django and other plugins to develop the app
-HTML
-Page markup
-CSS
-Styling
-Javascript
-Running functions to initalize components
-JQuery
-Animations and click functions
-Framework
+<br>Python
+<br>Using Django frameworks and other plugins to develop the app
+<br>HTML
+<br>Page markup
+<br>CSS Styling
+<br>Javascript
+<br>Running functions to initalize components
+<br>JQuery
+<br>Animations and click functions
 
-Bootstrap4
-Used for basic styles and outline
+
+<br>Bootstrap4
+<br>Used for basic styles and outline
 
 <h3>Resources</h3>
-Bootstrap Icons
-Used for icons
-Google Fonts
-Font Styles
+<br>Bootstrap Icons
+<br>Used for icons
+<br>Google Fonts
+<br>Font Styles
 
 Use to resize images for the website 
 https://picresize.com/
 
 <h3>Packages</h3>
-Please see requirements.txt
+<br>Please see requirements.txt
 
 <h2>Testing & Troubleshooting</h2>
 <h3>Validation</h3>
 
-All forms have validation and will not submit without the proper information.
+<p>All forms have validation and will not submit without the proper information.
 Links checked with W3C Link Checker
 HTML has been validated with W3C HTML5 Validator
-CSS has been validated with W3C CSS Validator and auto-prefixed with CSS Autoprefixer. There is a validation issue with margin-block-end but it is a valid value in all popular browser.
-Each javascript file was tested on the site for errors and fucntionality using the console and with JSHint
+CSS has been validated with W3C CSS Validator and auto-prefixed with CSS Autoprefixer. There is a validation issue with margin-block-end but it is a valid value in all popular browser.</p>
+<p>Each javascript file was tested on the site for errors and fucntionality using the console and with JSHint
 gitignore file has been included to prevent system file commits
 requirements.txt updated
-Testing
+Testing</p>
 
-Travis CI is utilised for testing on each branch. If the master branch is tested and passes, the app is automatically deployed to Heroku. THis maintains a functional production app at all times.
+<p>Travis CI is utilised for testing on each branch. If the master branch is tested and passes, the app is automatically deployed to Heroku. THis maintains a functional production app at all times.
 Coverage has been utilised throughout the project to ensure all code is tested thoroughly.
-A secondary, persistent, PostgreSQL test database has been utilised on Heroku. This way the test database functions more similarly to the production database, with items being added and persisting. THis allows for more accurate testing and test views which function on a real database. Testing must be run with this command to maintain the database's persistence
-python manage.py test --keepdb
-There is a console log notification that states whether debug mode is off or on.
+A secondary, persistent, PostgreSQL test database has been utilised on Heroku. This way the test database functions more similarly to the production database, with items being added and persisting. THis allows for more accurate testing and test views which function on a real database. Testing must be run with this command to maintain the database's persistence</p>
+<br>python manage.py test --keepdb
+<p>There is a console log notification that states whether debug mode is off or on.
 The views have been thoroughly manually tested and refined over time, utilising python features to create documents in the database in a useful, flexible structure.
 The documents in the database have been examined and structured in a manner so that the information is well defined, checking how the views effect documents.
-I have tested the site and its layout on multiple android devices, different sizes, on multiple browsers. I was unable to test on iOS. Mainly developed and tested using chrome developer mode. It is fully responsive with a clean layout on each device.
+I have tested the site and its layout on multiple android devices, different sizes, on multiple browsers. I was unable to test on iOS. Mainly developed and tested using chrome developer mode. It is fully responsive with a clean layout on each device.</p>
 Each feature was developed and tested in its own branch before being pushed to master.
 Some tests were performed on views and were tested manually throuroughly. For example, every possible combination on search was tested.
 Each time a feature was added all the functions were tested to see if there was an impact.
