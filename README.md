@@ -81,7 +81,9 @@ Testing</p>
 <p>Travis CI is utilised for testing on each branch. If the master branch is tested and passes, the app is automatically deployed to Heroku. THis maintains a functional production app at all times.
 Coverage has been utilised throughout the project to ensure all code is tested thoroughly.
 A secondary, persistent, PostgreSQL test database has been utilised on Heroku. This way the test database functions more similarly to the production database, with items being added and persisting. THis allows for more accurate testing and test views which function on a real database. Testing must be run with this command to maintain the database's persistence</p>
+
 <br>python manage.py test --keepdb
+
 <p>There is a console log notification that states whether debug mode is off or on.
 The views have been thoroughly manually tested and refined over time, utilising python features to create documents in the database in a useful, flexible structure.
 The documents in the database have been examined and structured in a manner so that the information is well defined, checking how the views effect documents.
