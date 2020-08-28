@@ -59,6 +59,10 @@ Used for icons
 Google Fonts
 Font Styles
 
+Use to resize images for the website 
+https://picresize.com/
+
+Packages
 Please see requirements.txt
 
 Testing & Troubleshooting
