@@ -1,11 +1,11 @@
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
-Code Institute Milestone Project — 4
+<h1>Code Institute Milestone Project — 4</h1>
 
 A website designed to allow users to easily browse services,treatments and products available and book a time that suits them should they wish, the business owner benefits by allowing to modify update and change products or services, while also receiving emails with bookings. 
 
 Deployed here - 
 
-This website can be used for,
+<h2>This website can be used for,</h2>
 
 By the customer to view each type service on offer.
 By the customer to find out the benefits of each service and what is involved
@@ -19,27 +19,29 @@ The search page returns weighted results utilising PostgreSQL database unique fe
 
 The page is broken down into 2 sections, 1)The Login section allows already registered users to sign in using their Username/Email Address and password, if the user was attempting to book an appointment then it will redirect them to the checkout page otherwise it will bring them to the products page. On submitting the details it is checked against what's in the database and if it matches the user is logged in. If the username or password is incorrect the site returns a message explaining why the process was not successful.
 
-Profile Page
-Settings
-Billing & Shipping
+<h2>Profile Page</h2>
+<h3>Settings<h3>
+  <h4>Billing & Shipping</h4>
 The main feature of the settings page is to be able to save SHipping and Billing settings seperately, and have them applied seperately. On preparing an order form all fields will be propopulated with the neccessary info. Likewise, all information will be saved to your account if you so choose at payment during the checkout.
 
-Email & Password
+<h4>Email & Password</h4>
 DJango-allauth has been used for the majority of settings regarding verifivation and security. Most functions work with a redirect to the user's previous oage for a smoother experience However, I found django-allauth to be quite inflexible and obtuse. I would likely not choose it agin.
 The checkout app has two sections it allows anonymous checkout and user checkout, in incoporates stripe for secure payments
 
-The Register section is just a button that brings the user to the Register Page and allows the user to add their details. The fields to fill out are kept to a minimum to make sure the user does not feel overwhelmed.
+<h4>The Register section</h4>
+Just a button that brings the user to the Register Page and allows the user to add their details. The fields to fill out are kept to a minimum to make sure the user does not feel overwhelmed.
 
-The forgot password page is a simple one field form that allows the user to reset their password should they have forgotten it. When clicking the button the user will receive a message to check their email that has been sent, they can then use this to reset their password using a link.
+<h4>The forgot password page</h4>
+A simple one field form that allows the user to reset their password should they have forgotten it. When clicking the button the user will receive a message to check their email that has been sent, they can then use this to reset their password using a link.
 
-Future Development
+<h2>Future Development</h2>
 If I had more time for development I would have included a booking date and time section under the checkout page, it would give the user the available date and times that they can book, this would be taken from a list of events in Google calendar. Each appointment type would have a different calendar in the business. If you clicked a tick appears on the button chosen to confirm this has been picked. When a session in an individual appointment has been booked it would no longer appear in this list of buttons.
 
-Technologies Used
-Languages
+<h2>Technologies Used</h2>
 
+<h3>Languages</h3>
 Python
-Using Flask and other plugins to develop the app
+Using Django and other plugins to develop the app
 HTML
 Page markup
 CSS
@@ -52,8 +54,8 @@ Framework
 
 Bootstrap4
 Used for basic styles and outline
-Resources
 
+<h3>Resources</h3>
 Bootstrap Icons
 Used for icons
 Google Fonts
@@ -62,11 +64,11 @@ Font Styles
 Use to resize images for the website 
 https://picresize.com/
 
-Packages
+<h3>Packages</h3>
 Please see requirements.txt
 
-Testing & Troubleshooting
-Validation
+<h2>Testing & Troubleshooting</h2>
+<h3>Validation</h3>
 
 All forms have validation and will not submit without the proper information.
 Links checked with W3C Link Checker
@@ -89,16 +91,16 @@ Each feature was developed and tested in its own branch before being pushed to m
 Some tests were performed on views and were tested manually throuroughly. For example, every possible combination on search was tested.
 Each time a feature was added all the functions were tested to see if there was an impact.
 
-Deployment
+<h2>Deployment</h2>
 Github
 Fork the repo on github.
 Push the repo to a PaaS, such as Heroku.
 Set the environment variables, ensure debug is False.
 Deploy and your good to go.
 
-Credits
-Content
+<h2>Credits</h2>
+<h3>Content</h3>
 Photos are from google images, the project is for educational purpose. The project is based on the codinstitute lessons which was utilised and changed for my needs.
 
-Awknowledgements.
+<h2>Awknowledgements</h2>
 I'd like to extend a special thanks to all who work and study in Code institute as you've made the process of learning a new skill exciting and working together made the whole process a good bit easier. 
