@@ -40,11 +40,11 @@
                 Online Store
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="dental-link">
-                <a href="{% url 'products' %}?category=" class="dropdown-item">Anti-Aging</a>
-                <a href="{% url 'products' %}?category=" class="dropdown-item">Cleanser</a>
-                <a href="{% url 'products' %}?category=" class="dropdown-item">Moisturiser</a>
-                <a href="{% url 'products' %}?category=" class="dropdown-item">Skin Supplements</a>
-                <a href="{% url 'products' %}?category=" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=anti_aging" class="dropdown-item">Anti-Aging</a>
+                <a href="{% url 'products' %}?category=cleanser" class="dropdown-item">Cleanser</a>
+                <a href="{% url 'products' %}?category=moisturiser" class="dropdown-item">Moisturiser</a>
+                <a href="{% url 'products' %}?category=skin_supplements" class="dropdown-item">Skin Supplements</a>
+                <a href="{% url 'products' %}?category=anti_aging,cleanser,moisturiser,skin_supplements" class="dropdown-item">All Products</a>
             </div>
         </li>
     </ul>
