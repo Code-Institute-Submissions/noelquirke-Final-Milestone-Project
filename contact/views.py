@@ -7,7 +7,7 @@ from .models import Email
 class CreateEmailView(SuccessMessageMixin, CreateView):
     model = Email
     context_object_name = 'email'
-    fields = ['email', 'name', 'subject', 'message']
+    fields = ['email', 'name', 'phone', 'subject', 'message']
     success_message = 'Thank you, your message has been sent'
 
     def get_form(self, form_class=None):
@@ -15,9 +15,10 @@ class CreateEmailView(SuccessMessageMixin, CreateView):
         form = super().get_form(form_class)
         form.fields['email'].widget.attrs = {'placeholder': 'Email Address'}
         form.fields['name'].widget.attrs = {'placeholder': 'Full Name'}
-        form.fields['subject'].widget.attrs = {'placeholder': 'The Topic'}
+        form.fields['phone'].widget.attrs = {'placeholder': 'Phone Number'}
+        form.fields['subject'].widget.attrs = {'placeholder': 'Appointment Date/Time'}
         form.fields['message'].widget.attrs = {
-            'placeholder': 'When would you like an appointment?*'}
+            'placeholder': 'Any further information required?*'}
         form.fields['message'].label = ''
         return form
 
