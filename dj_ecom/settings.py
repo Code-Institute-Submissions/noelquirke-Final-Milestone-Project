@@ -27,7 +27,7 @@ SECRET_KEY = '=i+=hv-ij+@9!^o5-xbxa=wsv*nlys_#*fau-e+$+6$dbv)-&l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['athena-envy.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -119,16 +119,17 @@ WSGI_APPLICATION = 'dj_ecom.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-
-DATABASES = {
-    'default': dj_database_url.parse('postgres://ruimhjedkaqbry:2a7f3bdfaa60f7f3d9a421542de3488ccddae2ff7579e35a597bcc10638dff8f@ec2-54-246-87-132.eu-west-1.compute.amazonaws.com:5432/df3ic30gkue7le')
-}
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
