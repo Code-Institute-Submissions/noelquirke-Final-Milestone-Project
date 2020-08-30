@@ -1,5 +1,5 @@
 from django.views.generic import CreateView
-from django.contrib.messages import SuccessMessageMixin
+from django.contrib.messages.views import SuccessMessageMixin
 
 from .models import Email
 
