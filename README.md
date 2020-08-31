@@ -3,7 +3,7 @@
 
 A website designed to allow users to easily browse services,treatments and products available, the business owner benefits by allowing to modify update and change products or services, while also receiving emails. 
 
-Deployed here - 
+Deployed here - https://athena-envy.herokuapp.com/
 
 <h2>This website can be used for,</h2>
 
