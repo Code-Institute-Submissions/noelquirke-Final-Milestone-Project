@@ -1,9 +1,9 @@
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 <h1>Code Institute Milestone Project — 4</h1>
 
-A website designed to allow users to easily browse services,treatments and products available and book a time that suits them should they wish, the business owner benefits by allowing to modify update and change products or services, while also receiving emails with bookings. 
+A website designed to allow users to easily browse services,treatments and products available, the business owner benefits by allowing to modify update and change products or services, while also receiving emails. 
 
-Deployed here - 
+Deployed here - https://athena-envy.herokuapp.com/
 
 <h2>This website can be used for,</h2>
 
