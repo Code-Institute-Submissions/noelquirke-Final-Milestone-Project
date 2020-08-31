@@ -1,5 +1,4 @@
 asgiref==3.2.3
-Babel==2.8.0
 boto3==1.14.50
 botocore==1.17.50
 coverage==5.2.1
