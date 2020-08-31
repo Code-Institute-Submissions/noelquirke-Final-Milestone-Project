@@ -1,8 +1,0 @@
-Athena Envy has received a message from {{ name }} at {{ email }}
-
-They have written the following:
-
-{{ message }}
-
-Found
-Athena Envy

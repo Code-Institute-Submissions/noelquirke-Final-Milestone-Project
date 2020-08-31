@@ -1,9 +1,0 @@
-Hello, {{ name }},
-
-Thank you for getting in contact with us.
-
-We have received your message and will get back to you with regards to your appointment as soon as possible.
-
-
-Kind Regards,
-Athena Envy
